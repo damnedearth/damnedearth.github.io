@@ -3,20 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Damned Earth Dynamics Co.</title>
+  <title>Centered Image</title>
   <style>
-    body {
+    html, body {
+      height: 100%;
       margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      font-size: 2rem;
-      text-align: center;
-      background: #fff;
-      color: #000;
+    }
+    /* Center the image container */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0; /* optional background */
+    }
+    /* Make the image scale nicely */
+    img {
+      max-width: 90%;   /* scales horizontally */
+      max-height: 90%;  /* scales vertically */
+      height: auto;
+      width: auto;
     }
   </style>
 </head>
 <body>
-  damned earth dynamics co.
+  <!-- Replace "your-image.jpg" with your image path -->
+  <img src="dedco.png" alt="Centered Image">
 </body>
 </html>
