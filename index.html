@@ -9,24 +9,21 @@
       height: 100%;
       margin: 0;
     }
-    /* Center the image container */
     body {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: ##FFFFFF; /* optional background */
+      background-color: #FFFFFF; /* fixed the double ## */
     }
-    /* Make the image scale nicely */
     img {
-      max-width: 40%;   /* scales horizontally */
-      max-height: 40%;  /* scales vertically */
+      /* Choose the smaller of 80% viewport width or 60% viewport height */
+      width: min(80vw, 60vh);
       height: auto;
-      width: auto;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <!-- Replace "your-image.jpg" with your image path -->
   <img src="dedco.png" alt="Centered Image">
 </body>
 </html>
